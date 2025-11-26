@@ -108,7 +108,6 @@ VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
 # TWRP specific build flags
-TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/sprd_backlight/brightness"
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_EXTERNAL_STORAGE := true
@@ -129,4 +128,4 @@ TW_EXCLUDE_MTP := false
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_FASTBOOT := true
 TW_INCLUDE_FASTBOOTD := true
-TW_DEVICE_VERSION := CatDev3
+TW_DEVICE_VERSION := @doma00
