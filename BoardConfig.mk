@@ -109,6 +109,7 @@ PLATFORM_VERSION := 16.1.0
 
 # TWRP specific build flags
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/sprd_backlight/brightness"
+TW_THEME := portrait_hdpi
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_EXTERNAL_STORAGE := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
