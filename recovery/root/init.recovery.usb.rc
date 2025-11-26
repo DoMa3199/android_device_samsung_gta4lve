@@ -7,9 +7,26 @@ on init
     setprop service.adb.tcp.port 0
 
 on property:sys.usb.config=adb
+    mkdir /config
+    mount configfs none /config
+
+    mkdir /config/usb_gadget/g1
+    write /config/usb_gadget/g1/idVendor 0x04E8
+    write /config/usb_gadget/g1/idProduct 0x6860
+
+    mkdir /config/usb_gadget/g1/strings/0x409
+    write /config/usb_gadget/g1/strings/0x409/serialnumber ${ro.serialno}
+    write /config/usb_gadget/g1/strings/0x409/manufacturer Samsung
+    write /config/usb_gadget/g1/strings/0x409/product "TWRP Recovery"
+
+    mkdir /config/usb_gadget/g1/functions/ffs.adb
+    mkdir /dev/usb-ffs
+    mkdir /dev/usb-ffs/adb
+    mount functionfs adb /dev/usb-ffs/adb
+
+    mkdir /config/usb_gadget/g1/configs/b.1
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f1
+
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+
     start adbd
-    write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 04E8
-    write /sys/class/android_usb/android0/idProduct 6860
-    write /sys/class/android_usb/android0/functions adb
-    write /sys/class/android_usb/android0/enable 1
