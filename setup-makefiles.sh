@@ -8,8 +8,8 @@
 
 set -e
 
-DEVICE=gta4lve
-VENDOR=samsung
+DEVICE=blue
+VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
