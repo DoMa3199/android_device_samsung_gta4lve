@@ -1,10 +1,9 @@
-ro.display.series=Samsung Galaxy Tab A7 10.1
-ro.board.platform=ums512
-ro.product.system.brand=samsung
-ro.product.system.device=gta4lve
-ro.product.system.manufacturer=samsung
-ro.product.system.model=SM-T509
-ro.boot.bootdevice=7824900.sdhci
+ro.display.series=Xiaomi Redmi A3
+ro.board.platform=MT6765
+ro.product.system.brand=xiaomi
+ro.product.system.device=blue
+ro.product.system.manufacturer=xiaomi
+ro.product.system.model=blue
 ro.boot.dynamic_partitions=true
 ro.adb.secure=0
 
