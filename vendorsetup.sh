@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo twrp_gta4lve-user
-add_lunch_combo twrp_gta4lve-userdebug
-add_lunch_combo twrp_gta4lve-eng
+add_lunch_combo twrp_blue-user
+add_lunch_combo twrp_blue-userdebug
+add_lunch_combo twrp_blue-eng
 
