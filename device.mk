@@ -5,9 +5,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_PLATFORM := P15945AA1
+PRODUCT_PLATFORM := MT6765
 
-LOCAL_PATH := device/samsung/gta4lve
+LOCAL_PATH := device/xiaomi/blue
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
@@ -37,7 +37,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
-TARGET_OTA_ASSERT_DEVICE := gta4lve
+TARGET_OTA_ASSERT_DEVICE := blue
 
 TARGET_COPY_OUT_VENDOR := vendor
 
@@ -60,5 +60,5 @@ TW_NO_BIND_SYSTEM := true
 TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_APEX := true
 TW_FRAMERATE := 60
-TW_DEVICE_VERSION := CatDev3
+TW_DEVICE_VERSION := Adam
 TW_HAS_DOWNLOAD_MODE := true
